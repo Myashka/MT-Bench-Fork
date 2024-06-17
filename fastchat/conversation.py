@@ -786,8 +786,8 @@ register_conv_template(
         sep_style=SeparatorStyle.CUSTOM_RS,
         sep="<RS>",
         sep2="</RS>",
-        stop_str=["</RS>", "<|endoftext|>"],
-        stop_token_ids=[50283, 0]
+        stop_str=["</RS>", "<|eot_id|>"],
+        stop_token_ids=[50283, 128001, 128009],
     )
 )
 
